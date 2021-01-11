@@ -19,10 +19,11 @@ QuantumultX的配置文件，包括分流、策略组、复写、定时任务等
 注意事项：
 
 1、配置文件中的【自动切换运行模式】，以我的配置文件为例：
-````diff
-+  #第一个filter为蜂窝网络（4g），第二个filter为其他wifi，第三项为无需科学上网的wifi名字(如果你有软路由并配置了科学上网，请把MI5G改成你自己wifi的名字)，第四项为需全局科学的wifi名字
--  running_mode_trigger=filter, filter, MI5G:all_direct, otherwifi: all_proxy
+#第一个filter为蜂窝网络（4g），第二个filter为其他wifi，第三项为无需科学上网的wifi名字(如果你有软路由并配置了科学上网，请把MI5G改成你自己wifi的名字)，第四项为需全局科学的wifi名字
+running_mode_trigger=filter, filter, MI5G:all_direct, otherwifi: all_proxy
+
 2、配置文件中的【server_remote】是你的订阅信息，订阅机场的链接后，你的服务器配置会在这里
+
 3、关于定时任务的注意事项：
-1、点击右下角小风车，找到【构造请求】
-2、请求列表中的 汇率监控、疫情日报是无需配置的，其中b站签到需要先在浏览器中登陆账号获取cookie，贴吧、美团、联通需要到各自的app中进行签到操作以获取cookie，其他的脚本请务必点开查看脚本中的注意事项，配合boxjs使用。
+(1)点击右下角小风车，找到【构造请求】
+(2)请求列表中的 汇率监控、疫情日报是无需配置的，其中b站签到需要先在浏览器中登陆账号获取cookie，贴吧、美团、联通需要到各自的app中进行签到操作以获取cookie，其他的脚本请务必点开查看脚本中的注意事项，配合boxjs使用。
